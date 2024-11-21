@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f7f7fc;
+}
+
+.header {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 120vh;
+}
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5em 1em;
+        padding-top: 50px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .coin {
+        width: 100px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 .5em;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .navbar a:hover {
+        color: rgb(142, 142, 218);
+    }
+
+    .navbar a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: rgb(142, 142, 218);
+        transition: width .3s;
+        border-radius: 10px;
+        
+    }
+
+    .navbar a:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+
+    .menu {
+        position: fixed;
+        top: 30%;
+        right: 0%;
+        background-color: #211e55;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 10px 0px 0px 10px ;
+        width: 40vh;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        list-style: circle;
+        gap: 20px;
+    }
+
+
+    .content {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .menu a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    #dicas {
+        border-bottom: 1px solid #211e55;
+    }
+
+    #fundos {
+        margin-top: 3%;
+    }
+
+
+
+
+
+    footer {
+        background-color: #0f0e22;
+        height: 55vh;
+    }
+
+    .footer {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .footer h1 {
+        color: #fff;
+        padding-top: 40px;
+    }
+
+    .footer p{
+        color: #c5c5c5;
+        
+    }
+
+    .dev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #c5c5c5;
+        margin-top: 30px;
+    }
+
+    .dev p{
+        color: #c5c5c5;
+        font-weight: 100;
+        padding-top: 10px;
+    }

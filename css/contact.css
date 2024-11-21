@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f7f7fc;
+}
+
+.header {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+}
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5em 1em;
+        padding-top: 50px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .coin {
+        width: 100px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 .5em;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .navbar a:hover {
+        color: rgb(142, 142, 218);
+    }
+
+    .navbar a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: rgb(142, 142, 218);
+        transition: width .3s;
+        border-radius: 10px;
+        
+    }
+
+    .navbar a:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 5%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #003d80;
+}
+
+
+footer {
+    background-color: #0f0e22;
+    height: 55vh;
+}
+
+.footer {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer h1 {
+    color: #fff;
+    padding-top: 40px;
+    font-size: 1em;
+}
+
+.footer p{
+    color: #c5c5c5;
+    
+}
+
+.dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #c5c5c5;
+    margin-top: 30px;
+}
+
+.dev p{
+    color: #c5c5c5;
+    font-weight: 100;
+    padding-top: 10px;
+}
